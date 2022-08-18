@@ -1,9 +1,11 @@
 # InSituCinema
 Immersive In Situ Cinema
-This is a Unity Project using Bibcam by Keijiro Takahashi.
-The requirments are: UNity 2021 LTS and LiDAR-enabled iOS device for recording.
 
-While building, the scene are organised as BIBCIN 0, Encoder 1 and Decoder 2.
+
+This is a Unity Project using Bibcam by Keijiro Takahashi. The code was expanded.
+The requirments are: UNity 2021 LTS and a LiDAR-enabled iOS device for recording.
+
+While building, the scene have to be organised as BIBCIN 0, Encoder 1 and Decoder 2.
 
 The first scene after opening is the BIBCIN.
 There is asked what the user wants to do: What do you want to do?
