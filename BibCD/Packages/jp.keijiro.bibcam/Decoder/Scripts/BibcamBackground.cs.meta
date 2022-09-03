@@ -4,7 +4,8 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - _camera: {instanceID: 0}
+  - _decoder: {instanceID: 0}
+  - _demux: {instanceID: 0}
   - _shader: {fileID: 4800000, guid: b9eb90f7526a94194b73cae0832d7587, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
