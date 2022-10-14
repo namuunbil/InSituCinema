@@ -1,27 +1,14 @@
 # InSituCinema
-Immersive In Situ Cinema
+
+This prototype is based on Unity using Bibcam\footnote{https://github.com/keijiro/Bibcam, last used 29. Juli} by Keijiro Takahashi as foundation. The code of this project was expanded on in order to fit the requirements of this work, mainly the playback function. With regards to Bibcam the prototype used Unity 2021 LTS and a LiDAR-enabled iOS device for recording.
 
 
-This is a Unity Project using Bibcam by Keijiro Takahashi. The code was expanded.
-The requirments are: UNity 2021 LTS and a LiDAR-enabled iOS device for recording.
+The first scene after opening the application is called the "BIBCIN" and can be seen in fig !!!!!. The opening scene asked what the user wants to do: "What do you want to do?" The options are "Record" or "Play Video". With a press on either button the user is directed to the corresponding scene. 
 
-While building, the scene have to be organised as BIBCIN 0, Encoder 1 and Decoder 2.
+If the option "Record" is choosen the next scene in Fig !!! is called "Encoder". The Encoder films a video with metadata via the button "Record" and saves it into the camera roll. "Stop" appears when the camera is actively filming and can stop the recording. The "Back to Menu" button returns the user to the initial "BIBCIN" scene.
 
-The first scene after opening is the BIBCIN.
-There is asked what the user wants to do: What do you want to do?
-The options are "Record" or "Play Video".
 
-For the option "Record", on click it moves to the next scene Encoder.
-Encoder allows on click of "Record" to film a video via Bibcam and saves into the camera roll.
-"Stop" can be clicked to stop the recording. Or "Back to Menu" to return to the first scene.
+If the option "Pick Video" has been selected in the first scene it opens the "Decoder" scene. An AR camera shows the current camera view. A white cube is in the center with a blue capsule in front of it. This scene with its buttons can be seen in fig !!!!!. "Select Video" is the first button and in accordacne to its name it allows the user to access their camera roll and select a video to be played back. This video will be displayed on the cube. The capsule and the video move together according to the metadata containing the 3D space data of the original, the camera that recorded the video initially, camera movement. As the cube moves in all directions the user can follow along. The "Stop" button stops the video and the movement entirely. "Pause" halts the video but can be continued with the button "Resume".  Regardless of the current video playing or not playing the "Pick Video" button can always be used.
 
-For the option "Play Video", it opens the Decoder scene.
-An AR camera shows the camera view. A white plane and a blue capsule should be visible.
-A video from the camera roll can be selected with "Select Video". This video will be played on the plane. The capsule shows the way..
-But careful, both the capsule and plane move according to the video metadata. The plane might have to be found again as it moves in space.
-If a blue cube is visible, the plane is displayed on the other side. The user has to move.
-The metadata is given with Bibcam, so it is not adjusted. The plane is often found on the ceiling.
-The plane moves according to the metadata.
-The video can be paused and then resumed. The "Stop" button brings the user back to the first scene.
-At any point a new video can be selected which then is displayed.
+The last button "Calibrate" allows the user to use the current frame of a selected video and match with the real background as seen in figure !!!!!. The current frame is extracted and semi-transperent as it is overlayed on the camera view as can be seen in figure !!!!. The user can move the device till the background aligns with the frame and then go back to the "Decoder" scene with "Done". "Back to Menu" has the same function again and returns the user to the BIBCIN scene.
 
